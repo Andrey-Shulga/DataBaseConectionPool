@@ -21,6 +21,7 @@ public class ConnectionPool {
     private static BlockingDeque<Connection> connections;
     private static final int POOL_START_SIZE = 10;
     private static final int POOL_MAX_SIZE = 50;
+    private static int connectionCount = 0;
     private static final String dbPropertyFileName = "database.properties";
     private static final Logger logger = LoggerFactory.getLogger(ConnectionPool.class);
 
@@ -37,7 +38,7 @@ public class ConnectionPool {
         }
     }
 
-    private Connection getNewConnection() throws SQLException {
+    private static Connection getNewConnection() throws SQLException {
         Connection connection;
         Properties props = new Properties();
         try (InputStream in = Files.newInputStream(Paths.get(dbPropertyFileName))) {
@@ -52,7 +53,7 @@ public class ConnectionPool {
         String url = props.getProperty("jdbc.url");
         String username = props.getProperty("jdbc.username");
         String password = props.getProperty("jdbc.password");
-
+        connectionCount++;
         return DriverManager.getConnection(url, username, password);
 
     }
@@ -62,6 +63,26 @@ public class ConnectionPool {
             connectionPool = new ConnectionPool();
         }
         return connectionPool;
+    }
+
+    static Connection getConnection() {
+        Connection connection = null;
+        if (connectionCount <= POOL_MAX_SIZE) {
+            try {
+                connection = connections.pollFirst();
+                if (connection == null)
+                    return getNewConnection();
+            } catch (SQLException e) {
+                logger.error("Can't get new connection", e);
+            }
+        } else {
+            try {
+                connection = connections.takeFirst();
+            } catch (InterruptedException e) {
+                logger.error("Can't get new connection from Connection pool", e);
+            }
+        }
+        return connection;
     }
 
 
