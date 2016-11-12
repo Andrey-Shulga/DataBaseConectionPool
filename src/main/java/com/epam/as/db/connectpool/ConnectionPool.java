@@ -15,7 +15,7 @@ import java.util.Properties;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
 
-class ConnectionPool {
+public class ConnectionPool {
 
     private static ConnectionPool connectionPool;
     private static BlockingDeque<Connection> connections;
@@ -60,11 +60,9 @@ class ConnectionPool {
     public static ConnectionPool createConnectionPool() {
         if (connectionPool == null) {
             connectionPool = new ConnectionPool();
-
         }
         return connectionPool;
     }
-
 
 
 }
