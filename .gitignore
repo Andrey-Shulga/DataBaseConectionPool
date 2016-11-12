@@ -4,3 +4,5 @@ target/
 # IDEA files
 .idea/
 *.iml
+log/
+*.sql

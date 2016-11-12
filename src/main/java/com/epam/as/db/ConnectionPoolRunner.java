@@ -14,9 +14,14 @@ public class ConnectionPoolRunner {
 
         ConnectionPool connectionPool = ConnectionPool.createConnectionPool();
         SelecteQueryRunnable selecteQueryRunnable = new SelecteQueryRunnable();
-        Thread thread = new Thread(selecteQueryRunnable);
 
         for (int i = 0; i < NUMBERS_OF_THREAD; i++) {
+            Thread thread = new Thread(selecteQueryRunnable);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             thread.start();
         }
     }

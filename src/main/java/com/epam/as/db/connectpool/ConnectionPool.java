@@ -20,13 +20,15 @@ public class ConnectionPool {
     private static ConnectionPool connectionPool;
     private static BlockingDeque<Connection> connections;
     private static final int POOL_START_SIZE = 10;
-    private static final int POOL_MAX_SIZE = 50;
+    private static final int POOL_MAX_SIZE = 30;
     private static int connectionCount = 0;
     private static final String dbPropertyFileName = "database.properties";
     private static final Logger logger = LoggerFactory.getLogger(ConnectionPool.class);
 
     private ConnectionPool() {
         connections = new LinkedBlockingDeque<>(POOL_MAX_SIZE);
+        logger.debug("Maximum limit of connections in the pool = {} connections", POOL_MAX_SIZE);
+        logger.debug("Create initial connection pool = {} connections", POOL_START_SIZE);
         for (int i = 0; i < POOL_START_SIZE; i++) {
             Connection connection = null;
             try {
@@ -36,6 +38,7 @@ public class ConnectionPool {
             }
             connections.addFirst(connection);
         }
+        logger.debug("Initial connection pool with = {} connections created.", connections.size());
     }
 
     private static Connection getNewConnection() throws SQLException {
@@ -54,6 +57,8 @@ public class ConnectionPool {
         String username = props.getProperty("jdbc.username");
         String password = props.getProperty("jdbc.password");
         connectionCount++;
+        logger.debug("The current number of connections = {}", connectionCount);
+        //logger.debug("Current connection's pool size = {}", connections.size());
         return DriverManager.getConnection(url, username, password);
 
     }
@@ -66,8 +71,9 @@ public class ConnectionPool {
     }
 
     static Connection getConnection() {
+
         Connection connection = null;
-        if (connectionCount <= POOL_MAX_SIZE) {
+        if (connectionCount < POOL_MAX_SIZE) {
             try {
                 connection = connections.pollFirst();
                 if (connection == null)
@@ -77,13 +83,21 @@ public class ConnectionPool {
             }
         } else {
             try {
+                if (connectionCount == POOL_MAX_SIZE)
+                    logger.debug("Connection pool reached max size {}, new connection " +
+                            "will not be create, wait for release any connection!", POOL_MAX_SIZE);
                 connection = connections.takeFirst();
             } catch (InterruptedException e) {
                 logger.error("Can't get new connection from Connection pool", e);
             }
         }
+        logger.debug("Thread took connection from pool, pool size now = {}", connections.size());
+
         return connection;
     }
 
-
+    public static void returnConnectionToPool(Connection returnedConnection) {
+        if (returnedConnection != null) connections.offerLast(returnedConnection);
+    }
 }
+

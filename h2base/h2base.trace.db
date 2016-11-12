@@ -674,3 +674,1587 @@ org.h2.jdbc.JdbcSQLException: Feature not supported: "getFunctionColumns" [50100
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
+2016-11-12 14:27:29 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:29 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:29 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:29 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:29 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:29 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:29 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:29 jdbc[17]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:29 jdbc[17]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:29 jdbc[17]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:38 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:38 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:38 jdbc[18]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:38 jdbc[16]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:38 jdbc[15]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:38 jdbc[14]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:38 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:27:38 jdbc[17]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[19]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[18]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[17]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[15]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[14]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:28:01 jdbc[16]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:57)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:74)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:34:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:34:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:34:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:34:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:34:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:34:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:35:36 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:35:36 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:35:36 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:35:36 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:35:36 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:35:36 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:58)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:75)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:43:12 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:61)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:78)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:43:12 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:61)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:78)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:43:12 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:61)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:78)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:43:12 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:61)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:78)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:43:12 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:61)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:78)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:43:12 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:61)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:78)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:50:54 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:50:54 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:50:54 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:50:54 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:50:54 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 14:50:54 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:02:07 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:02:07 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:02:07 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:02:07 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:02:07 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:02:07 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:09:35 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:09:35 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:09:35 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:09:35 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:09:35 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:09:35 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:14:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:14:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:14:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:14:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:14:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:14:33 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:79)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:15:21 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:15:21 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:15:21 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:15:21 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:15:21 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:15:21 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:16:13 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:16:13 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:16:13 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:16:13 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:16:13 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:16:13 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:20:57 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:20:57 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:20:57 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:20:57 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:20:57 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2016-11-12 15:20:57 jdbc[13]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:184)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:126)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.epam.as.db.connectpool.ConnectionPool.getNewConnection(ConnectionPool.java:62)
+	at com.epam.as.db.connectpool.ConnectionPool.getConnection(ConnectionPool.java:80)
+	at com.epam.as.db.connectpool.SelecteQueryRunnable.run(SelecteQueryRunnable.java:15)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
