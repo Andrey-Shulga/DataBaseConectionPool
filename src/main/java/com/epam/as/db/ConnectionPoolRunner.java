@@ -1,28 +1,32 @@
 package com.epam.as.db;
 
-import com.epam.as.db.connectpool.ConnectionPool;
-import com.epam.as.db.connectpool.SelecteQueryRunnable;
+import com.epam.as.db.connectionpool.ConnectionPool;
+import com.epam.as.db.connectionpool.SelecteQueryRunnable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Test connection pool in many threads.
  */
 public class ConnectionPoolRunner {
 
+    private static final Logger logger = LoggerFactory.getLogger(ConnectionPoolRunner.class);
+
     public static void main(String[] args) {
 
-        final int NUMBERS_OF_THREAD = 100;
+        final int NUMBERS_OF_THREAD = 50;
 
         ConnectionPool connectionPool = ConnectionPool.createConnectionPool();
-        SelecteQueryRunnable selecteQueryRunnable = new SelecteQueryRunnable();
 
         for (int i = 0; i < NUMBERS_OF_THREAD; i++) {
-            Thread thread = new Thread(selecteQueryRunnable);
-            try {
-                Thread.sleep(500);
+            Thread thread = new Thread(new SelecteQueryRunnable());
+            /*try {
+                Thread.sleep(300);
             } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+               logger.error("Current thread was interrupted. " + e.getMessage());
+            }*/
             thread.start();
         }
+
     }
 }

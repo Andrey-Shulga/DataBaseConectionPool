@@ -17,7 +17,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public class ConnectionPool {
 
-    private static ConnectionPool connectionPool;
     private static BlockingQueue<Connection> connections;
     private static final int POOL_START_SIZE = 10;
     private static final int POOL_MAX_SIZE = 30;
@@ -25,29 +24,33 @@ public class ConnectionPool {
     private static final String dbPropertyFileName = "database.properties";
     private static final Logger logger = LoggerFactory.getLogger(ConnectionPool.class);
 
+    private static class InstanceHolder {
+        final static ConnectionPool instance = new ConnectionPool();
+    }
+
+    public static ConnectionPool createConnectionPool() {
+        return InstanceHolder.instance;
+    }
+
     private ConnectionPool() {
         connections = new LinkedBlockingQueue<>(POOL_MAX_SIZE);
         logger.debug("Maximum limit of connections in the pool = {} connections", POOL_MAX_SIZE);
-        logger.debug("Create initial connection pool = {} connections", POOL_START_SIZE);
+        logger.debug("Trying to create initial connection pool = {} connections...", POOL_START_SIZE);
         for (int i = 0; i < POOL_START_SIZE; i++) {
-            Connection connection = null;
-            try {
-                connection = getNewConnection();
-            } catch (SQLException e) {
-                logger.error("Can't get connection from database", e);
-            }
-            connections.offer(connection);
+            Connection connection = getNewConnection();
+            if (connection != null)
+                connections.offer(connection);
         }
-        logger.debug("Initial connection pool with = {} connections created.", connections.size());
+        logger.debug("Initial connection pool with {} connections was created.", connections.size());
     }
 
-    private static Connection getNewConnection() throws SQLException {
-        Connection connection;
+    private static Connection getNewConnection() {
+
         Properties props = new Properties();
         try (InputStream in = Files.newInputStream(Paths.get(dbPropertyFileName))) {
             props.load(in);
         } catch (IOException e) {
-            logger.error("Can't open file {} for reading properties.", dbPropertyFileName, e);
+            logger.error("Can't open file {} for reading properties of database.", e.getMessage());
         }
 
         //String drivers = props.getProperty("jdbc.drivers");
@@ -56,49 +59,60 @@ public class ConnectionPool {
         String url = props.getProperty("jdbc.url");
         String username = props.getProperty("jdbc.username");
         String password = props.getProperty("jdbc.password");
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection(url, username, password);
+        } catch (SQLException e) {
+            logger.error("Can't get new connection from database. " + e.getMessage());
+        }
         connectionCount++;
         logger.debug("The current number of connections = {}", connectionCount);
-        //logger.debug("Current connection's pool size = {}", connections.size());
-        return DriverManager.getConnection(url, username, password);
-
+        return connection;
     }
 
-    public static ConnectionPool createConnectionPool() {
-        return InstanceHolder.instance;
-    }
-
-    static Connection getConnection() {
+    static synchronized Connection getConnection() {
 
         Connection connection = null;
+        logger.debug("Thread trying to take connection from pool...");
         if (connectionCount < POOL_MAX_SIZE) {
-            try {
-                connection = connections.poll();
-                if (connection == null)
+            connection = connections.poll();
+            if (connection == null) {
+                logger.debug("No connections in pool! Trying to get new connection...");
                     return getNewConnection();
-            } catch (SQLException e) {
-                logger.error("Can't get new connection", e);
             }
+            logger.debug("Thread take connection from pool, total connections in pool now = {}", connections.size());
         } else {
+            if (connectionCount >= POOL_MAX_SIZE)
+                logger.debug("Number of connections reached max pool's size = {}, No new connection " +
+                        "will be create, waiting for release any connection...", POOL_MAX_SIZE);
             try {
-                if (connectionCount == POOL_MAX_SIZE)
-                    logger.debug("Number of connections reached max pool's size {}, new connection " +
-                            "won't be create, wait for release any connection!", POOL_MAX_SIZE);
                 connection = connections.take();
             } catch (InterruptedException e) {
-                logger.error("Can't get new connection from Connection pool", e);
+                logger.error("Interrupted while waiting new connection from Connection pool. " + e.getMessage());
             }
-        }
-        logger.debug("Thread took connection from pool, pool size now = {}", connections.size());
+            }
 
         return connection;
     }
 
-    public static void returnConnectionToPool(Connection returnedConnection) {
-        if (returnedConnection != null) connections.offer(returnedConnection);
+    static void putConnectionToPool(Connection returnedConnection) {
+        if (returnedConnection != null) {
+            connections.offer(returnedConnection);
+            logger.debug("Thread return connection back to pool, now total connections in pool = {}", connections.size());
+        }
     }
 
-    private static class InstanceHolder {
-        final static ConnectionPool instance = new ConnectionPool();
+    public static void closeConnectionPool() {
+        for (Connection con : connections)
+            try {
+                if (!con.isClosed())
+                    con.close();
+            } catch (SQLException e) {
+                logger.debug("Error with database access occur. " + e.getMessage());
+            }
+        logger.debug("Connection pool was closed.");
     }
+
+
 }
 
