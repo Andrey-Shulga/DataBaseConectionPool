@@ -1,4 +1,4 @@
-package com.epam.as.db.connectpool;
+package com.epam.as.db.connectionpool;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

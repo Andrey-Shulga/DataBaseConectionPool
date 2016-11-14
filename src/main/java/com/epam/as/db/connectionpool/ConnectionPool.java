@@ -1,4 +1,4 @@
-package com.epam.as.db.connectpool;
+package com.epam.as.db.connectionpool;
 
 
 import org.slf4j.Logger;
@@ -64,10 +64,7 @@ public class ConnectionPool {
     }
 
     public static ConnectionPool createConnectionPool() {
-        if (connectionPool == null) {
-            connectionPool = new ConnectionPool();
-        }
-        return connectionPool;
+        return InstanceHolder.instance;
     }
 
     static Connection getConnection() {
@@ -98,6 +95,10 @@ public class ConnectionPool {
 
     public static void returnConnectionToPool(Connection returnedConnection) {
         if (returnedConnection != null) connections.offerLast(returnedConnection);
+    }
+
+    private static class InstanceHolder {
+        final static ConnectionPool instance = new ConnectionPool();
     }
 }
 
