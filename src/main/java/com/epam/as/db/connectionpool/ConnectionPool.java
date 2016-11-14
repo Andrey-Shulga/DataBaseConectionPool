@@ -12,13 +12,13 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
-import java.util.concurrent.BlockingDeque;
-import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class ConnectionPool {
 
     private static ConnectionPool connectionPool;
-    private static BlockingDeque<Connection> connections;
+    private static BlockingQueue<Connection> connections;
     private static final int POOL_START_SIZE = 10;
     private static final int POOL_MAX_SIZE = 30;
     private static int connectionCount = 0;
@@ -26,7 +26,7 @@ public class ConnectionPool {
     private static final Logger logger = LoggerFactory.getLogger(ConnectionPool.class);
 
     private ConnectionPool() {
-        connections = new LinkedBlockingDeque<>(POOL_MAX_SIZE);
+        connections = new LinkedBlockingQueue<>(POOL_MAX_SIZE);
         logger.debug("Maximum limit of connections in the pool = {} connections", POOL_MAX_SIZE);
         logger.debug("Create initial connection pool = {} connections", POOL_START_SIZE);
         for (int i = 0; i < POOL_START_SIZE; i++) {
@@ -36,7 +36,7 @@ public class ConnectionPool {
             } catch (SQLException e) {
                 logger.error("Can't get connection from database", e);
             }
-            connections.addFirst(connection);
+            connections.offer(connection);
         }
         logger.debug("Initial connection pool with = {} connections created.", connections.size());
     }
@@ -47,7 +47,7 @@ public class ConnectionPool {
         try (InputStream in = Files.newInputStream(Paths.get(dbPropertyFileName))) {
             props.load(in);
         } catch (IOException e) {
-            logger.error("IOException error:", e);
+            logger.error("Can't open file {} for reading properties.", dbPropertyFileName, e);
         }
 
         //String drivers = props.getProperty("jdbc.drivers");
@@ -72,7 +72,7 @@ public class ConnectionPool {
         Connection connection = null;
         if (connectionCount < POOL_MAX_SIZE) {
             try {
-                connection = connections.pollFirst();
+                connection = connections.poll();
                 if (connection == null)
                     return getNewConnection();
             } catch (SQLException e) {
@@ -81,9 +81,9 @@ public class ConnectionPool {
         } else {
             try {
                 if (connectionCount == POOL_MAX_SIZE)
-                    logger.debug("Connection pool reached max size {}, new connection " +
-                            "will not be create, wait for release any connection!", POOL_MAX_SIZE);
-                connection = connections.takeFirst();
+                    logger.debug("Number of connections reached max pool's size {}, new connection " +
+                            "won't be create, wait for release any connection!", POOL_MAX_SIZE);
+                connection = connections.take();
             } catch (InterruptedException e) {
                 logger.error("Can't get new connection from Connection pool", e);
             }
@@ -94,7 +94,7 @@ public class ConnectionPool {
     }
 
     public static void returnConnectionToPool(Connection returnedConnection) {
-        if (returnedConnection != null) connections.offerLast(returnedConnection);
+        if (returnedConnection != null) connections.offer(returnedConnection);
     }
 
     private static class InstanceHolder {

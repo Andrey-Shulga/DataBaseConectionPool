@@ -12,8 +12,8 @@ public class SelecteQueryRunnable implements Runnable {
 
     @Override
     public void run() {
-        Connection connection = ConnectionPool.getConnection();
-        try {
+
+        try (Connection connection = ConnectionPool.getConnection()) {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM authors LIMIT 1");
             ResultSet resultSet = preparedStatement.executeQuery();
             //ConnectionPool.returnConnectionToPool(connection);
