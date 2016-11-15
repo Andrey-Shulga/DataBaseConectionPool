@@ -18,11 +18,12 @@ public class SelecteQueryRunnable implements Runnable {
     @Override
     public void run() {
 
+
         try {
             Connection connection = ConnectionPool.getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM authors LIMIT 1");
             ResultSet resultSet = preparedStatement.executeQuery();
-            //ConnectionPool.putConnectionToPool(connection);
+            ConnectionPool.putConnectionToPool(connection);
         } catch (SQLException e) {
             logger.error("Can't get new statement or resultset from connection " + e.getMessage());
         }

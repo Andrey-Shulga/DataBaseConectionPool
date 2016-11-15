@@ -16,15 +16,10 @@ public class ConnectionPoolRunner {
 
         final int NUMBERS_OF_THREAD = 50;
 
-        ConnectionPool connectionPool = ConnectionPool.createConnectionPool();
+        ConnectionPool.getInstance();
 
         for (int i = 0; i < NUMBERS_OF_THREAD; i++) {
             Thread thread = new Thread(new SelecteQueryRunnable());
-            /*try {
-                Thread.sleep(300);
-            } catch (InterruptedException e) {
-               logger.error("Current thread was interrupted. " + e.getMessage());
-            }*/
             thread.start();
         }
 
