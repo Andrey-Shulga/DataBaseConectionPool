@@ -6,8 +6,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -23,14 +21,29 @@ public class ConnectionPool {
     private static final String dbPropertyFileName = "database.properties";
     private static final Logger logger = LoggerFactory.getLogger(ConnectionPool.class);
     private static int connectionCount = 0;
-
+    private static String url;
+    private static String username;
+    private static String password;
 
     private ConnectionPool() {
+
+        Properties props = new Properties();
+        try (InputStream in = ConnectionPool.class.getClassLoader().getResourceAsStream(dbPropertyFileName)) {
+            props.load(in);
+        } catch (IOException e) {
+            logger.error("Can't open file {} for reading properties of database.", e.getMessage());
+        }
+
+        String drivers = props.getProperty("jdbc.drivers");
+        if (drivers != null) System.setProperty("jdbc.drivers", drivers);
+        url = props.getProperty("jdbc.url");
+        username = props.getProperty("jdbc.username");
+        password = props.getProperty("jdbc.password");
 
         logger.debug("Maximum limit of connections in the pool = {} connections", POOL_MAX_SIZE);
         logger.debug("Trying to create initial connection pool = {} connections...", POOL_START_SIZE);
         for (int i = 0; i < POOL_START_SIZE; i++) {
-            Connection connection = getNewConnection();
+            Connection connection = getNewConnection(url, username, password);
             if (connection != null)
                 connections.offer(connection);
         }
@@ -41,33 +54,16 @@ public class ConnectionPool {
         return InstanceHolder.instance;
     }
 
-    private static Connection getNewConnection() {
+    private static Connection getNewConnection(String url, String username, String password) {
 
-        Properties props = new Properties();
-        try (InputStream in = Files.newInputStream(Paths.get(dbPropertyFileName))) {
-            props.load(in);
-        } catch (IOException e) {
-            logger.error("Can't open file {} for reading properties of database.", e.getMessage());
-        }
-
-        //String drivers = props.getProperty("jdbc.drivers");
-        //if (drivers != null) System.setProperty("jdbc.drivers", drivers);
-
-        String url = props.getProperty("jdbc.url");
-        String username = props.getProperty("jdbc.username");
-        String password = props.getProperty("jdbc.password");
         Connection connection = null;
         try {
             connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
             logger.error("Can't get new connection from database. " + e.getMessage());
         }
-
         connectionCount++;
-
-
         logger.debug("The current number of connections = {}", connectionCount);
-
         return connection;
     }
 
@@ -80,7 +76,7 @@ public class ConnectionPool {
             connection = connections.poll();
             if (connection == null) {
                 logger.debug("No connections in pool! Trying to get new connection...");
-                return getNewConnection();
+                return getNewConnection(url, username, password);
             }
             logger.debug("Thread take connection from pool, total connections in pool now = {}", connections.size());
         } else {
